@@ -12,7 +12,18 @@
 
 <body>
     <div class="header">
-        <h1>Chania</h1>
+        <div id="Logo">
+            <img src="img/logo.png">
+        </div>  
+        <header>
+           <nav>  
+                        
+                <a href="#">Inicio</a>
+                <a href="#">Libros</a>
+                <a href="#">Reserva</a>
+                
+            </nav>
+        </header>
     </div>
 
     <div class="row">
@@ -32,6 +43,9 @@
                         <label for="Teléfono">Teléfono:</label>
                         <input type="number" id="Teléfono" name="Teléfono" required="required">
                         <br>
+                        <label for="nomLibr">Nombre del libro/s:</label>
+                        <input type="text" id="nomLibr" name="nomLibr" required="required">
+                        <br>
                         <label for="Fecha_Inicio">Fecha Inicio:</label>
                         <input type="date" id="Fecha_Inicio" name="Fecha_Inicio" required="required">
                         <br>
@@ -46,9 +60,14 @@
     </div>
     <div class="piePagina">
         <img src="img/logo.png" id="imgpiepag" class="col-4">
-        <div class="col-8" id="texto-pie">
+        <div class="col-4" id="texto-pie">
             <p>Dirección: c/Pepito 3</p>
             <p>Banthu</p>
+        </div>
+        <div class="col-4" id="texto-pie2">
+           <a href="#"><img src="img/icono-twitter.png"></a><br/>
+           <a href="#"><img src="img/insta.png"></a><br/>
+           <a href="#"><img src="img/email.png"></a><br/>
         </div>
     </div>
 </body>
