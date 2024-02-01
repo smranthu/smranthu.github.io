@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/encabezado.css" />
-    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/prueba.css" />
+ 
     <style>
        
     </style>
@@ -12,32 +12,83 @@
 </head>
 <body>
     
-    <div id="Logo">
-        <img src="img/logo.png">
+    <div class="containerMenu">
+        <iv id="Logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+        <header>
+            
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Libros</a>
+                <a href="#">Reserva</a>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="Buscar...">
+                <button type="button">Buscar</button>
+            </div>
+        </header>
     </div>
-    <div class="menu-toggle">&#9776; Menú</div>
-    <header>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Libros</a>
-            <a href="#">Reserva</a>
-        </nav>
-    </header>
+
+    <div class="slide">
+        <div class="contenido-slide">
+            <input class="slide-actual" type="radio" id="slide-1" name="slide" hidden="oculto"  checked="checked"/>
+            <div class="imagen">
+                <img src="img/slide1.jpg"/>
+            </div>
+            <input class="slide-actual" type="radio" id="slide-2" name="slide" hidden="oculto"/>
+            <div class="imagen">
+                <img src="img/slide2.jpg"/>
+            </div>
+            <input class="slide-actual" type="radio" id="slide-3"  name="slide" hidden="oculto"/>
+            <div class="imagen">
+                <img src="img/slide3.jpg"/>
+            </div>     
+            <label for="slide-2" class="boton next control-1"> › </label> 
+            <label for="slide-8" class="boton prev control-1"> ‹ </label>
+            <label for="slide-3" class="boton next control-2"> › </label>
+            <label for="slide-1" class="boton prev control-2"> ‹ </label>
+            <label for="slide-4" class="boton next control-3"> › </label>
+            <label for="slide-2" class="boton prev control-3"> ‹ </label>
+        </div>
+        
+    </div>
+    
 
     
-    <div class="text_img clearfix">
-        <div class="containerRight">
-            <img id="img1" src="img/biblioteca_index.jpg">
+    <div class="container">
+        
+
+        <div class="text left">
+            <p> En el vasto universo de las bibliotecas literarias, donde cada tomo alberga historias, conocimientos y mundos por descubrir, nos complace presentarles "Banthu". Esta biblioteca se erige como un santuario de la sabiduría, un espacio donde las páginas se entrelazan para crear un tapiz diverso de ideas, narrativas y enseñanzas.</p>
         </div>
-        <p>En el vasto universo de las bibliotecas literarias, donde cada tomo alberga historias, conocimientos y mundos por descubrir, nos complace presentarles "Banthu". Esta biblioteca se erige como un santuario de la sabiduría, un espacio donde las páginas se entrelazan para crear un tapiz diverso de ideas, narrativas y enseñanzas.</p>
-  
+        <img src="img/biblioteca_index.jpg" alt="Imagen 1">
     </div>
 
-    <div class="text_img">
-        <div class="containerLeft">
-            <img src="img/OIP.jpg">
-        </div>
+    <div class="container">
+        <img src="img/OIP.jpg" alt="Imagen"  id="img2">
+        <div class="text right">
             <p>Más que un simple depósito de información, Banthu se erige como un espacio de encuentro, donde los amantes de la lectura pueden intercambiar ideas, descubrir nuevas perspectivas y sumergirse en un océano de conocimientos. Cada libro en Banthu es una puerta abierta a la comprensión y a la posibilidad de expandir horizontes intelectuales.</p>
+        </div>
     </div>
+</div>
+
+    <div class="piePagina">
+        <img src="img/logo.png" id="imgpiepag" class="col-4">
+        <div class="col-4" id="texto-pie">
+            <p>Dirección: c/Pepito 3</p>
+            <p>Banthu</p>
+        </div>
+        <div class="col-4" id="texto-pie2">
+           <a href="#"><img src="img/icono-twitter.png"></a><br/>
+           <a href="#"><img src="img/insta.png"></a><br/>
+           <a href="#"><img src="img/email.png"></a><br/>
+        </div>
+    </div>
+
+
+
+    
+
 </body>
 </html>
