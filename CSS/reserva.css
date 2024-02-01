@@ -11,15 +11,7 @@
     width: 120%;
     padding-top: 10%;
   }
-  .piePagina{
-    font-size:large;
-    font-weight: normal;
-    }
-  .piePagina #texto-pie{
-    padding-top: 5%;
-    text-align: left;
-    padding-left: 5%;
-  }
+
   input[type=text],[type=number],[type=date] {
     width: 100%;
     padding: 12px 20px;
@@ -44,18 +36,7 @@
   input[type=submit]:hover {
     background-color: #45a049;
   }
-  .piePagina #texto-pie2{
-    padding-top: 5%;
-    text-align: center;
-    padding-left: 10%;
-  }
-  .piePagina #texto-pie2 img{
-    width: 15%;
-    margin-top: 3%;
-  }
-  #imgpiepag{
-    width: 20%;
-  }
+
   #Formulario input{
    margin:15px;
   }
@@ -123,9 +104,6 @@
     margin-left: 5%;
     margin-right: 5%;
   }
-  #texto-pie2{
-    margin-left: 10%;
-  }
   .header{
     margin-bottom: 20%;
   }
@@ -158,11 +136,5 @@
       margin-left: 5%;
       margin-right: 5%;
     }
-    .piePagina #texto-pie2{
-      width: 50%;
-      margin-left: 25%;
-    }
-    #texto-pie3{
-      margin-left: 10%;
-    }
+
   }

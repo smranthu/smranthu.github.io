@@ -8,12 +8,17 @@
   padding-left: 5%;
   font-size: normal;
 }
-
 .piePagina #texto-pie2{
   padding-top: 5%;
   text-align: center;
   padding-left: 10%;
+  width: 15%;
+  margin-top: 3%;
 }
+#imgpiepag{
+  width: 20%;
+}
+
 .piePagina #texto-pie3{
   padding-top: 5%;
   text-align: center;
@@ -21,7 +26,7 @@
   font-size: smaller;
 }
 .piePagina #texto-pie2 img{
-  width: 20%;
+  width: 100%;
   margin-top: 3%;
 }
 [class*="col-"] {
