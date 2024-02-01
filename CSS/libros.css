@@ -44,6 +44,10 @@ table tr td{
 }
 
 @media only screen and (max-width: 768px) {
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
     th, td {
         display: block;
         width: 100%;
