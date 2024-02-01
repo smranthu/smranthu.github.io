@@ -10,17 +10,13 @@
 }
 
 header {
-    background-color: #4dce42; 
+    background-color: #4dce42;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.menu-toggle {
-    color: white;
-    cursor: pointer;
-}
 
 nav {
     display: flex;
@@ -28,18 +24,18 @@ nav {
 
 nav a {
     align-items: center;
-    color: white; 
+    color: white;
     text-decoration: none;
-    margin: 0 5px; 
+    margin: 0 5px;
     font-weight: bold;
-    font-size: 16px; 
-    padding: 5px 10px; 
-    border: 1px solid white; 
-    border-radius: 5px; 
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
 }
 
 nav a:hover {
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
 .search-box {
@@ -63,29 +59,17 @@ nav a:hover {
     cursor: pointer;
 }
 @media screen and (max-width: 768px) {
-    #Logo {
-        margin: 5px;
-    }
-
-    #Logo img {
-        max-width: 60px;
-    }
-
     header {
-        padding: 5px;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    nav a {
-        font-size: 14px;
+    nav {
+        margin-top: 10px;
     }
 
-    .search-box input {
-        padding: 3px;
-        margin-right: 3px;
-    }
-
-    .search-box button {
-        padding: 3px 6px;
+    .search-box {
+        margin-top: 10px;
     }
 }
 
