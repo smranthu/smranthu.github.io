@@ -36,18 +36,7 @@
   input[type=submit]:hover {
     background-color: #45a049;
   }
-  .piePagina #texto-pie2{
-    padding-top: 5%;
-    text-align: center;
-    padding-left: 10%;
-  }
-  .piePagina #texto-pie2 img{
-    width: 15%;
-    margin-top: 3%;
-  }
-  #imgpiepag{
-    width: 20%;
-  }
+ 
   #Formulario input{
    margin:15px;
   }
