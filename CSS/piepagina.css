@@ -6,6 +6,7 @@
   padding-top: 5%;
   text-align: left;
   padding-left: 5%;
+  font-size: normal;
 }
 
 .piePagina #texto-pie2{
@@ -13,15 +14,16 @@
   text-align: center;
   padding-left: 10%;
 }
+.piePagina #texto-pie3{
+  padding-top: 5%;
+  text-align: center;
+  padding-left: 10%;
+  font-size: smaller;
+}
 .piePagina #texto-pie2 img{
-  width: 15%;
+  width: 20%;
   margin-top: 3%;
 }
-#imgpiepag{
-  width: 20%;
-}
-
-
 [class*="col-"] {
   float: left;
   padding: 15px;

@@ -130,7 +130,7 @@
     margin-bottom: 20%;
   }
   }
-  @media only screen and (max-width: 390px) {
+  @media only screen and (max-width: 500px) {
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
@@ -157,5 +157,12 @@
     body{
       margin-left: 5%;
       margin-right: 5%;
+    }
+    .piePagina #texto-pie2{
+      width: 50%;
+      margin-left: 25%;
+    }
+    #texto-pie3{
+      margin-left: 10%;
     }
   }
