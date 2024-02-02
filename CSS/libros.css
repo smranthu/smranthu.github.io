@@ -36,7 +36,8 @@ th {
 .image-container {
     width: 150px; 
     overflow: hidden; 
-    margin-bottom: 5px; 
+     
+    margin-right: -59px;
    
     
 }
@@ -72,5 +73,16 @@ td p{
         display: block;
         width: 100%;
         box-sizing: border-box;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+ 
+
+    .image-container {
+    
+        margin-right: 0px;
+       
+        
     }
 }
