@@ -19,7 +19,9 @@ table {
     
 }
 
-
+th{
+    color:white;
+}
 
 th, td {
     border: 1px solid #d4d4d4;
@@ -27,7 +29,6 @@ th, td {
     padding: 10px;
     text-align: left;
     background-color: white;
-    color:white;
 }
 td{
     border-radius: 0 10px 10px 0;
