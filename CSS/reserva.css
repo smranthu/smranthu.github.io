@@ -12,7 +12,6 @@
     padding-top: 10%;
   }
 
-
   input[type=text],[type=number],[type=date] {
     width: 100%;
     padding: 12px 20px;
@@ -63,11 +62,7 @@
     padding: 15px;
 
   }
-  #Logo img{
-    width: 10%;
-    padding-left: 0px;
-    margin-left: 0px;
-  }
+
   .row::after {
     content: "";
     clear: both;
