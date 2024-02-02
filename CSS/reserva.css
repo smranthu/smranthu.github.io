@@ -5,7 +5,6 @@
   body {
     margin-left: 20%;
     margin-right: 20%;
-    background-color: #f0f0f0;
   }
   #imagenlateral{
     width: 120%;
@@ -71,7 +70,8 @@
   .row{
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px #2d8625c4;
+    margin-top: 5%;
   }
   
   [class*="col-"] {
@@ -130,7 +130,7 @@
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
     #imagenlateral{
-      visibility: hidden;
+      display:none
     }
     #Formulario{
       width: 100%;
