@@ -47,7 +47,11 @@
                         <input type="number" id="Teléfono" name="Teléfono" required="required">
                         <br>
                         <label for="nomLibr">Nombre del libro/s:</label>
-                        <input type="text" id="nomLibr" name="nomLibr" required="required">
+                        <select id="nomLibr" name="nomLibr">
+                            <option value="Babel">Babel - R.F. Kuang</option>
+                            <option value="CancionHyF">Canción de Hielo y Fuego I - George R.R Martin</option>
+                            <option value="Babel">La cúpula - Stephen King</option>
+                        </select>
                         <br>
                         <label for="Fecha_Inicio">Fecha Inicio:</label>
                         <input type="date" id="Fecha_Inicio" name="Fecha_Inicio" required="required">
@@ -71,9 +75,9 @@
             <p>Copyright © 2024 - Todos los derechos reservados</p>
          </div>
         <div class="col-3" id="texto-pie2">
-           <a href="#"><img src="img/icono-twitter.png"></a><br/>
-           <a href="#"><img src="img/insta.png"></a><br/>
-           <a href="#"><img src="img/email.png"></a><br/>
+           <div id="tw"><a href="#"><img src="img/icono-twitter.png" ></a><br/></div>
+           <div id="inst"><a href="#"><img src="img/insta.png" ></a><br/></div>
+           <div id="mail"><a href="#"><img src="img/email.png" ></a><br/></div>
         </div>
     </div>
 </body>

@@ -8,16 +8,6 @@
   padding-left: 5%;
   font-size: normal;
 }
-.piePagina #texto-pie2{
-  padding-top: 5%;
-  text-align: center;
-  padding-left: 10%;
-  width: 15%;
-  margin-top: 3%;
-}
-#imgpiepag{
-  width: 20%;
-}
 .piePagina #texto-pie3{
   padding-top: 5%;
   text-align: center;
@@ -25,8 +15,11 @@
   font-size: smaller;
 }
 .piePagina #texto-pie2 img{
-  width: 100%;
+  width: 20%;
   margin-top: 3%;
+}
+.piePagina #texto-pie2{
+  padding-top: 6%;
 }
 [class*="col-"] {
   float: left;
@@ -60,12 +53,31 @@
   .col-s-10 {width: 83.33%;}
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
-
+  #imgpiepag{
+    width: 25%;
+  }
+/*Poner los iconos en horizontal con FLEX */
 #texto-pie2{
-  margin-left: 10%;
+  display: flex; 
+  width: 100%; 
+   margin-left: 25%;
+   margin-top:-7%;
 }
+/*Igualar el tamaño de los iconos*/
+  #tw{
+    width: 50%;  }
+  #inst{width: 50%;
+  margin-left: -30%;}
+  #mail{width: 65%;
+    margin-left: -30%;
+  margin-top: -22px;}
+/*Centrar info del Pie de página*/
+  #texto-pie3{
+    margin-left: 10%;
+    font-size: 100000px;
+  }
 }
-@media only screen and (max-width: 778px) {
+@media only screen and (max-width: 550px) {
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
@@ -79,15 +91,20 @@
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
 
-  .piePagina #texto-pie2{
-    width: 50%;
-    margin-left: 25%;
+/*Poner los iconos en horizontal con FLEX */
+  #texto-pie2{
+  display: flex; 
+  width: 100%; 
+   margin-left: 20%;
+}
+/*Igualar el tamaño de los iconos*/
+  #tw{
+    width: 100%;
   }
-
-  .piePagina #texto-pie2 img{
-    width: 25%;
-    margin-top: 3%;
-  }
+  #inst{width: 100%;}
+  #mail{width: 130%;
+  margin-top: -7px;}
+/*Centrar info del Pie de página*/
   #texto-pie3{
     margin-left: 10%;
   }
