@@ -62,6 +62,9 @@
     width: 25%;
     margin-top: 3%;
   }
+  .piePagina{
+    margin-left: 10%;
+  }
 /*Poner los iconos en horizontal con FLEX */
 #texto-pie2{
   display: flex; 
@@ -122,4 +125,8 @@
   .piePagina #texto-pie{
     margin-left: -10%;
   }
+  .piePagina{
+    margin-left: 5%;
+  }
+
 }
