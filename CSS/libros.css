@@ -86,8 +86,8 @@ td p{
         margin-right: 5%;
     }
     th, td {
-        display: block;
-        width: 100%;
+    
+        width: 50%;
         box-sizing: border-box;
     }
 }
