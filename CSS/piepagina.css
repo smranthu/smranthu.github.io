@@ -1,6 +1,7 @@
 .piePagina{
   font-size:large;
   font-weight: normal;
+  margin-left: 15%;
   }
 .piePagina #texto-pie{
   padding-top: 5%;
@@ -20,12 +21,15 @@
 }
 .piePagina #texto-pie2{
   padding-top: 6%;
+  margin-left: 50px;
 }
 [class*="col-"] {
   float: left;
   padding: 15px;
 }
-
+#imgpiepag{
+  width:25%;
+}
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -60,7 +64,7 @@
 #texto-pie2{
   display: flex; 
   width: 100%; 
-   margin-left: 25%;
+   margin-left: 19%;
    margin-top:-7%;
 }
 /*Igualar el tamaño de los iconos*/
@@ -70,11 +74,11 @@
   margin-left: -30%;}
   #mail{width: 65%;
     margin-left: -30%;
-  margin-top: -22px;}
+  margin-top: -15px;}
 /*Centrar info del Pie de página*/
   #texto-pie3{
     margin-left: 10%;
-    font-size: 100000px;
+    margin-top: 5px;
   }
 }
 @media only screen and (max-width: 550px) {
@@ -107,5 +111,8 @@
 /*Centrar info del Pie de página*/
   #texto-pie3{
     margin-left: 10%;
+  }
+  #imgpiepag{
+    margin-top: 10%;
   }
 }
