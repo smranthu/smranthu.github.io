@@ -2,10 +2,6 @@
     box-sizing: border-box;
   }
 
-  body {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
   #imagenlateral{
     width: 120%;
     padding-top: 10%;
@@ -57,10 +53,7 @@
     padding-top: 5%;
     padding-right: 10%;
    }
-  .header {
-    padding: 15px;
-
-  }
+  
 
   .row::after {
     content: "";
