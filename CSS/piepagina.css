@@ -3,10 +3,11 @@
   font-weight: normal;
   margin-left: 15%;
   }
+  /*Centra el pie de página y le da tamaño grande de letra y que no sea negrita.*/
 .piePagina #texto-pie{
   padding-top: 5%;
   text-align: left;
-  padding-left: 5%;
+  padding-left: 10%;
   font-size: normal;
 }
 .piePagina #texto-pie3{
@@ -15,13 +16,12 @@
   padding-left: 10%;
   font-size: smaller;
 }
-.piePagina #texto-pie2 img{
-  width: 20%;
-  margin-top: 3%;
-}
 .piePagina #texto-pie2{
   padding-top: 6%;
-  margin-left: 50px;
+  margin-left: 5%;
+}
+.piePagina #texto-pie2 img{
+ width: 25%;
 }
 [class*="col-"] {
   float: left;
@@ -29,6 +29,7 @@
 }
 #imgpiepag{
   width:25%;
+  margin-top: 1%;
 }
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -59,12 +60,13 @@
   .col-s-12 {width: 100%;}
   #imgpiepag{
     width: 25%;
+    margin-top: 3%;
   }
 /*Poner los iconos en horizontal con FLEX */
 #texto-pie2{
   display: flex; 
   width: 100%; 
-   margin-left: 19%;
+   padding-left: 20%;
    margin-top:-7%;
 }
 /*Igualar el tamaño de los iconos*/
@@ -98,8 +100,10 @@
 /*Poner los iconos en horizontal con FLEX */
   #texto-pie2{
   display: flex; 
-  width: 100%; 
-   margin-left: 20%;
+  padding-left: 17%;
+}
+#imgpiepag{
+  width: 35%;
 }
 /*Igualar el tamaño de los iconos*/
   #tw{
@@ -114,5 +118,8 @@
   }
   #imgpiepag{
     margin-top: 10%;
+  }
+  .piePagina #texto-pie{
+    margin-left: -10%;
   }
 }
