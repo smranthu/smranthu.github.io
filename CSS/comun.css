@@ -1,23 +1,49 @@
-*{
+
+* {
     box-sizing: border-box;
 }
+
+/* Establece estilos generales para el cuerpo del documento */
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    margin-left: 15%;
-    margin-right: 15%;
+    font-family: 'Times New Roman', Times, serif; /* Define la fuente para el cuerpo del documento */
+    margin: 0; /* Elimina el margen exterior */
+    padding: 0; /* Elimina el relleno exterior */
+    background-color: #f0f0f0; /* Establece el color de fondo */
+    margin-left: 15%; /* Margen izquierdo del cuerpo */
+    margin-right: 15%; /* Margen derecho del cuerpo */
 }
 
-h1{
-    color: #4dce42;
-    text-decoration: solid;
-    font-style: italic;
-    text-align: center;
-
-
+/* Modifica los encabezados */
+h1 {
+    color: #4dce42; /* Establece el color del texto */
+    text-decoration: solid; /* Establece la decoración del texto */
+    text-align: center; /* Alinea el texto al centro */
 }
 
+/* Modifica el cuerpo del documento para pantallas con un ancho máximo de 848px */
+@media only screen and (max-width: 848px) {
+    body {
+        margin-left: 5%; /* Ajusta el margen izquierdo */
+        margin-right: 5%; /* Ajusta el margen derecho */
+    }
+}
 
+/* Modifica el cuerpo del documento para pantallas con un ancho máximo de 550px */
+@media only screen and (max-width: 550px) {
+    body {
+        margin-left: 2%; /* Ajusta el margen izquierdo */
+        margin-right: 2%; /* Ajusta el margen derecho */
+    }
+}
 
+/* Agrega sombra y borde redondeado a los elementos con la clase "shadow" */
+.shadow {
+    border-radius: 10px; /* Establece el radio de borde */
+    box-shadow: 0 0 10px #2d8625c4; /* Agrega una sombra */
+}
+
+/* Establece estilos para el texto con la clase "text" */
+.text {
+    color: #444; /* Establece el color del texto */
+    font-family: 'Open Sans', sans-serif; /* Define la fuente del texto */
+}

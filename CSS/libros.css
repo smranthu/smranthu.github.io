@@ -10,6 +10,11 @@ th{
     color:white;
 }
 
+.books:hover{
+    border-radius: 14px;
+    box-shadow: 0 0 14px #2d8625c4;
+}
+
 th, td {
     border: 1px solid #d4d4d4;
     border-radius: 10px 0 0 10px;
@@ -78,11 +83,7 @@ td p {
 
 
     @media only screen and (max-width: 848px) {
-        body {
-            margin-left: 2%;
-            margin-right: 2%;
-        }
-        
+       
         .portada{
             width: 25%;
             padding: 0;

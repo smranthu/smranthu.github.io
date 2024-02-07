@@ -92,7 +92,6 @@
     max-width: 100%;
     margin: 20px auto;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
 }
@@ -112,8 +111,7 @@
     padding: 20px;
     font-size: 20px;
     line-height: 1.6;
-    color: #444;
-    font-family: 'Open Sans', sans-serif;
+    
 }
 
 /* Elemento : Los párrafos dentro del texto */
@@ -136,12 +134,8 @@
 
 /* Media query para pantallas de tamaño máximo de 850px */
 @media screen and (max-width: 850px) {
-    /* Cambia los márgenes izquierdo y derecho del cuerpo */
-    body {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
+    /* 
+   
     /* Cambia el diseño a una sola columna */
     .container {
         grid-template-columns: 1fr;

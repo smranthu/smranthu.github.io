@@ -61,8 +61,7 @@
   }
   .row{
     background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #2d8625c4;
+    
   }
   
   [class*="col-"] {
@@ -98,10 +97,7 @@
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
  
-  body {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
+ 
   }
   @media only screen and (max-width: 550px) {
     .col-1 {width: 8.33%;}
@@ -129,8 +125,5 @@
       width: 140%;
       margin-left: -10%;
     }
-    body{
-      margin-left: 5%;
-      margin-right: 5%;
-    }
+  
   }
