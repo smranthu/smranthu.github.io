@@ -17,6 +17,7 @@
 /* Elemento: El encabezado */
 /* Lo que hace: Modifica el color de fondo, relleno, y configura el encabezado para que los elementos estén distribuidos uniformemente horizontalmente y alineados verticalmente */
 header {
+    border-radius: 8px;
     background-color: #4dce42;
     padding: 10px;
     display: flex;

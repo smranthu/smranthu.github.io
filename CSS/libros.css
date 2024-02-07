@@ -66,6 +66,7 @@ td {
 .image-container img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px 0 0 10px;
     display: block;
 }
 
@@ -105,7 +106,10 @@ td p {
     /* Lo que hace: Ajusta el ancho al 100% y elimina los bordes redondeados */
     .image-container img {
         width: 100%;
-        border-radius: 0;
+        border-radius: 10px 0 0 10px;
+        margin: 0;
+        padding: 0;
+        height: 100%;
     }
 
     /* Elemento : Las celdas de texto en dispositivos con pantallas pequeñas */
