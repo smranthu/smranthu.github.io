@@ -1,16 +1,6 @@
 
-
-
-* {
-    box-sizing: border-box;
-}
-
-
-
-#generalContainer {
-    background-color: white;
-}
-
+/* Elemento : Los slides */
+/* Lo que hace: Establece la posición relativa, sombra, margen superior, altura ajustable y ancho al 100% */
 .slide {
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
@@ -19,6 +9,8 @@
     width: 100%;
 }
 
+/* Elemento : El contenido de los slides */
+/* Lo que hace: Establece la posición relativa, oculta el desbordamiento y ajusta el tamaño al 100% */
 .contenido-slide {
     position: relative;
     overflow: hidden;
@@ -26,23 +18,30 @@
     height: 100%;
 }
 
+/* Elemento : La imagen actual dentro del slide */
+/* Lo que hace: Establece la posición estática y opacidad al 100% */
 .slide-actual:checked + .imagen {
     position: static;
     opacity: 100;
 }
 
+/* Elemento : Las imágenes dentro del slide */
+/* Lo que hace: Establece la posición absoluta y opacidad en 0, y ajusta la imagen al tamaño del contenedor */
 .imagen {
     position: absolute;
     opacity: 0;
 }
 
+/* Elemento : Las imágenes dentro del slide */
+/* Lo que hace: Establece la visualización de la imagen como bloque, ajusta la altura automáticamente y limita el ancho al 100% */
 .imagen img {
     display: block;
     height: fit-content;
     max-width: 100%;
 }
 
-
+/* Elemento : Los botones de control del slide */
+/* Lo que hace: Establece estilos para los botones de control, incluyendo posición, tamaño, color de fondo y cursor */
 .boton {
     background: rgba(0, 0, 0, 0.28);
     border-radius: 50%;
@@ -58,25 +57,35 @@
     text-align: center;
 }
 
+/* Elemento : El botón de control previo del slide */
+/* Lo que hace: Establece la posición a la izquierda del contenedor */
 .boton.prev {
     left: 2%;
 }
 
+/* Elemento : El botón de control siguiente del slide */
+/* Lo que hace: Establece la posición a la derecha del contenedor */
 .boton.next {
     right: 2%;
 }
 
+/* Elemento : Los botones de control del slide al pasar el mouse por encima */
+/* Lo que hace: Cambia el color de fondo y el color del texto al pasar el mouse por encima */
 .boton:hover {
     background: rgba(0, 0, 0, 0.8);
     color: #aaaaaa;
 }
 
+/* Elemento : Los controles de slide */
+/* Lo que hace: Muestra los controles de slide correspondientes cuando el slide está seleccionado */
 #slide-1:checked ~ .control-1,
 #slide-2:checked ~ .control-2,
 #slide-3:checked ~ .control-3 {
     display: block;
 }
 
+/* Elemento : Los contenedores */
+/* Lo que hace: Establece un diseño de dos columnas y un fondo, sombra y bordes redondeados */
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -86,76 +95,69 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
-  }
-  
-  .container img {
+}
+
+/* Elemento : Las imágenes dentro del contenedor */
+/* Lo que hace: Ajusta la imagen para que se ajuste al contenedor con bordes redondeados */
+.container img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
     object-fit: cover;
-  }
-  
-  .text {
+}
+
+/* Elemento : El texto dentro del contenedor */
+/* Lo que hace: Establece el relleno y el tamaño de fuente */
+.text {
     padding: 20px;
     font-size: 20px;
     line-height: 1.6;
     color: #444;
     font-family: 'Open Sans', sans-serif;
-  }
-  
-  .text p {
-    margin: 0;
-  }
-  
-  .text.left {
-    grid-column: 1;
-  }
-  
-  .text.right {
-    grid-column: 2;
-  }
-  
-
-
-
-
-#img1{
-    width: 50%;
 }
-@media screen and (max-width: 848px) {
+
+/* Elemento : Los párrafos dentro del texto */
+/* Lo que hace: Elimina el margen  de los párrafos */
+.text p {
+    margin: 0;
+}
+
+/* Elemento : El texto posicionado a la izquierda dentro del contenedor */
+/* Lo que hace: Establece la columna a la izquierda */
+.text.left {
+    grid-column: 1;
+}
+
+/* Elemento : El texto posicionado a la derecha dentro del contenedor */
+/* Lo que hace: Establece la columna a la derecha */
+.text.right {
+    grid-column: 2;
+}
+
+/* Media query para pantallas de tamaño máximo de 850px */
+@media screen and (max-width: 850px) {
+    /* Cambia los márgenes izquierdo y derecho del cuerpo */
     body {
         margin-left: 5%;
         margin-right: 5%;
     }
 
+    /* Cambia el diseño a una sola columna */
     .container {
         grid-template-columns: 1fr;
     }
 
+    /* Ajusta el tamaño máximo de la imagen al 100% del contenedor */
     .container img {
         max-width: 100%;
-        
         border-radius: 8px;
         object-fit: contain;
-        
-      }
+    }
 
+    /* Ajusta el tamaño de fuente del texto */
     .text {
         padding: 20px;
         font-size: 16px;
-    }
-
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav {
-        margin-top: 10px;
-    }
-
-    .search-box {
-        margin-top: 10px;
     }
 }
 

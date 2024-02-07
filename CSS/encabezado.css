@@ -1,6 +1,7 @@
 
 /* Elemento: El contenedor del logo */
 /* Lo que hace: Agrega un margen de 10px alrededor del contenedor del logo */
+
 #Logo {
     margin: 10px;
 }
@@ -82,14 +83,11 @@ nav a:hover {
     cursor: pointer;
 }
 
-/* pantallas de tamaño máximo de 848px */
-@media screen and (max-width: 848px) {
+/* pantallas de tamaño máximo de 768px  Tablets*/
+@media screen and (max-width: 850px) {
 
-    /* Cambia la dirección de flex del encabezado y los elementos se alinean al inicio */
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+
+    
 
     /* Agrega margen superior a la barra de navegación */
     nav {
@@ -100,6 +98,27 @@ nav a:hover {
     .search-box {
         margin-top: 10px;
     }
+}
+/* pantallas de tamaño máximo de 550px  Movil*/
+    @media screen and (max-width: 550px) {
+
+        /* Cambia la dirección de flex del encabezado y los elementos se alinean al inicio */
+        header {
+            flex-direction: column;
+           
+        }
+    
+        /* Agrega margen superior a la barra de navegación */
+        nav {
+            margin-top: 10px;
+        }
+    
+        /* Agrega margen superior cuadro de búsqueda */
+        .search-box {
+            margin-top: 10px;
+        }
+
+    
 }
 
 
