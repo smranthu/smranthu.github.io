@@ -2,7 +2,7 @@
     width: 120%;
     padding-top: 10%;
   }
-
+/*Estilo comun para los inputs (Bordes, colores...*/
   input[type=text],[type=number],[type=date] {
     width: 100%;
     padding: 12px 20px;
@@ -12,7 +12,7 @@
     border-radius: 4px;
     box-sizing: border-box;
   }
-  
+  /*Estilo concreto para submit*/
   input[type=submit] {
     width: 100%;
     background-color: rgb(18, 148, 6);
@@ -23,6 +23,7 @@
     border-radius: 4px;
     cursor: pointer;
   }
+  /*Sombras al seleccionar los distintos campos*/
   input:focus, input[type=number]:focus, select:focus {
     border-color: rgb(18, 148, 6);
     box-shadow: 3px 3px 3px rgba(18, 148, 6, 0.692);
@@ -31,6 +32,7 @@
   input[type=submit]:hover {
     background-color: #45a049;
   }
+  /*Cuadrar el select y aumentar su tamaño y estilo*/
   select {
     width: 100%;
     border: 1px solid grey;
@@ -117,6 +119,7 @@
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+    /*Ocultar imagen lateral*/
     #imagenlateral{
       display:none
     }
