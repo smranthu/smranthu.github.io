@@ -1,121 +1,125 @@
 
+/* Elemento : La tabla */
+/* Lo que hace: Establece el ancho al 100%, los bordes redondeados y el margen superior */
 table {
     width: 100%;
     border-radius: 20px;
     margin-top: 20px;
-    
 }
 
-th{
-    color:white;
-}
-
-.books:hover{
-    border-radius: 14px;
-    box-shadow: 0 0 14px #2d8625c4;
-}
-
-th, td {
-    border: 1px solid #d4d4d4;
+/* Elemento : Los encabezados de tabla */
+/* Lo que hace: Establece el color del texto, el color de fondo, y los bordes redondeados */
+th {
+    color: white;
+    background-color: #4dce42;
     border-radius: 10px 0 0 10px;
     padding: 10px;
     text-align: left;
-    background-color: white;
 }
-td{
-    border-radius: 0 10px 10px 0;
+
+/* Elemento : Las celdas de encabezado y cuerpo de tabla */
+/* Lo que hace: Establece los bordes, el relleno, y la alineación del texto */
+th, td {
+    border: 1px solid #d4d4d4;
+    padding: 10px;
+    text-align: left;
+    
 }
- 
-#descr{
+
+/* Elemento : Las celdas de cuerpo de tabla */
+/* Lo que hace: Establece los bordes redondeados en la esquina inferior derecha */
+td {
     border-radius: 0 10px 10px 0;
 }
 
-th {
-    background-color: #4dce42;
+/* Elemento : Las filas de la tabla con la clase "books" al pasar el raton */
+/* Lo que hace: Establece los bordes redondeados y una sombra al pasar el raton */
+.books:hover {
+    border-radius: 10px;
+    box-shadow: 0 0 14px #2d8625c4;
 }
 
-.portada{
+/* Elemento : El encabezado de la descripción */
+/* Lo que hace: Establece los bordes redondeados en la esquina inferior derecha */
+#descr {
+    border-radius: 0 10px 10px 0;
+}
+
+/* Elemento : Las imágenes de las portadas de los libros */
+/* Lo que hace: Establece un ancho fijo de 150px y bordes redondeados en la esquina superior izquierda */
+.portada {
     width: 150px;
-}
-.image-container {
-    width: 100%; 
-    overflow: hidden; 
-    
-    margin-right: -59px;
-   
-    
+    padding: 0;
+    border-radius: 10px 0 0 10px;
 }
 
+/* Elemento : El contenedor de imágenes */
+/* Lo que hace: Establece un ancho del 100% y oculta el desbordamiento */
+.image-container {
+    width: 100%;
+    overflow: hidden;
+    margin-right: -59px; /* Corrige el desbordamiento horizontal */
+}
+
+/* Elemento : Las imágenes dentro del contenedor */
+/* Lo que hace: Ajusta el tamaño máximo al 100% del contenedor y garantiza que la altura se ajuste automáticamente */
 .image-container img {
-    
     max-width: 100%;
     height: auto;
     display: block;
-
 }
 
-table tr td{
-    white-space: nowrap;
-}
-
+/* Elemento : Las celdas de texto */
+/* Lo que hace: Evita que el texto se desborde horizontalmente y subraya los enlaces */
 td p {
     text-decoration: underline;
     word-wrap: break-word;
     max-width: 100%;
 }
 
-
-
-.portada{
-    padding: 0;
-    border-radius: 10px 0 0 10px;
-
-}
-.portada img{
-    border-radius: 10px 0 0 10px;
-
-}
-
-.descripcion{
-    width:100% ;
-}
-
-
-
-    @media only screen and (max-width: 848px) {
-       
-        .portada{
-            width: 25%;
-            padding: 0;
-            margin: 0;
-        }
-        .image-container{
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            height: 100%;
-        }
-        .image-container img {
-            width: 100%;
-            border-radius: 0;
-        }
+/* Media query para pantalla máximo de 848px */
+@media only screen and (max-width: 848px) {
+    body {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
     
-     
-        td p {
-            max-width: 100%; 
-        }
+    /* Elemento : Las portadas de los libros en dispositivos con pantallas pequeñas */
+    /* Lo que hace: Ajusta el ancho al 25% del contenedor y elimina el relleno y el margen */
+    .portada {
+        width: 25%;
+        padding: 0;
+        margin: 0;
     }
 
-    
-
-
-@media only screen and (max-width: 1500px) {
- 
-
+    /* Elemento : Los contenedores de imágenes en dispositivos con pantallas pequeñas */
+    /* Lo que hace: Ajusta el ancho al 100% y elimina el relleno y el margen */
     .image-container {
-    
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    /* Elemento : Las imágenes dentro de los contenedores en dispositivos con pantallas pequeñas */
+    /* Lo que hace: Ajusta el ancho al 100% y elimina los bordes redondeados */
+    .image-container img {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    /* Elemento : Las celdas de texto en dispositivos con pantallas pequeñas */
+    /* Lo que hace: Ajusta el ancho máximo al 100% */
+    td p {
+        max-width: 100%;
+    }
+}
+
+/* Media query pantalla máximo de 1500px */
+@media only screen and (max-width: 1500px) {
+    /* Elemento : Los contenedores de imágenes en dispositivos con pantallas medianas */
+    /* Lo que hace: Elimina el margen derecho */
+    .image-container {
         margin-right: 0px;
-       
-        
     }
 }

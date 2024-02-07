@@ -1,74 +1,125 @@
-  #imagenlateral{
-    width: 120%;
-    padding-top: 10%;
-  }
-/*Estilo comun para los inputs (Bordes, colores...*/
-  input[type=text],[type=number],[type=date] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  /*Estilo concreto para submit*/
-  input[type=submit] {
-    width: 100%;
-    background-color: rgb(18, 148, 6);
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  /*Sombras al seleccionar los distintos campos*/
-  input:focus, input[type=number]:focus, select:focus {
-    border-color: rgb(18, 148, 6);
-    box-shadow: 3px 3px 3px rgba(18, 148, 6, 0.692);
-    outline: 0 none;
+/* Ajusta el ancho al 120% y agrega un espacio superior del 10% */
+#imagenlateral {
+  width: 120%; 
+  padding-top: 10%; 
 }
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  /*Cuadrar el select y aumentar su tamaño y estilo*/
-  select {
-    width: 100%;
-    border: 1px solid grey;
-    border-radius: 5px;
-    margin: 4% 0 4% 4%;
-    font-size: large;
-    cursor: pointer;
-    background-color: #fff;
-  }
-  #Formulario input{
-   margin:15px;
-  }
-  #Formulario {
-    font-size: larger;
-    font-weight: bold;
-    text-align: left;
-    padding-left: 15%;
-    padding-right: 10%;
-   }
-  
 
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  .row{
-    background-color: white;
-    
-  }
-  
-  [class*="col-"] {
-    float: left;
-    padding: 15px;
-  }
-  
+/* Establece el ancho al 100% y aplica estilos a los campos de entrada de texto, número y fecha */
+/* Aumenta el relleno, agrega margen y un borde sólido gris con bordes redondeados */
+/* Mantiene el tamaño total del elemento incluyendo relleno y borde */
+.row input[type=text],
+.row input[type=number],
+.row input[type=date] {
+  width: 100%; 
+  padding: 12px 20px; 
+  margin: 8px 0; 
+  display: inline-block; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; /* Mantiene el ancho y alto incluyendo el relleno y el borde */
+}
+
+/* Establece el ancho al 100%, color de fondo, color de texto y otros estilos para el botón de envío */
+input[type=submit] {
+  width: 100%; 
+  background-color: rgb(18, 148, 6); 
+  color: white; 
+  padding: 14px 20px; 
+  margin: 8px 0; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+}
+
+/* Aplica estilos de enfoque a campos de entrada, textarea y select */
+textarea:focus, 
+input:focus, 
+input[type=number]:focus, 
+select:focus {
+  border-color: rgb(18, 148, 6); 
+  box-shadow: 3px 3px 3px rgba(18, 148, 6, 0.692); 
+  outline: 0 none; 
+}
+
+/* Cambia el color de fondo cuando se pasa el ratón sobre el botón de envío */
+input[type=submit]:hover {
+  background-color: #45a049; 
+}
+
+/* Aplica estilos a los elementos de selección */
+select {
+  width: 100%; 
+  border: 1px solid grey; 
+  border-radius: 0.25em; 
+  margin: 4% 0 4% 4%; 
+  font-size: large; 
+  cursor: pointer; 
+  line-height: 1.1; 
+  background-color: #fff; 
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%); 
+}
+
+/* Añade margen a los campos de entrada dentro del formulario */
+#Formulario input {
+  margin: 15px; 
+}
+
+/* Establece estilos de fuente, alineación y espaciado dentro del formulario */
+#Formulario {
+  font-size: larger; 
+  font-weight: bold; 
+  text-align: left; 
+  padding-left: 15%; 
+  padding-top: 5%; 
+  padding-right: 10%; 
+}
+
+/* Crea un clearfix después de los elementos .row */
+.row::after {
+  content: ""; 
+  clear: both; 
+  display: table; 
+}
+
+/* Establece el comportamiento de los elementos con clase que empiezan por "col-" */
+[class*="col-"] {
+  float: left; 
+  padding: 15px; 
+}
+
+/* Establece el ancho para los elementos con clase col-N, donde N es un número del 1 al 12 */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* Aplica estilos específicos para pantallas con un ancho máximo de 850px */
+@media only screen and (max-width: 850px) {
+  /* Establece el ancho para elementos con clase col-s-N en pantallas de tablet */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+/* Aplica estilos específicos para pantallas con un ancho máximo de 550px */
+@media only screen and (max-width: 550px) {
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
@@ -81,49 +132,21 @@
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
-
-  @media only screen and (max-width: 850px) {
-    /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
- 
- 
-  }
-  @media only screen and (max-width: 550px) {
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-    /*Ocultar imagen lateral*/
-    #imagenlateral{
-      display:none
-    }
-    #Formulario{
-      width: 100%;
-      margin-left: -40%;
-    }
-
-    #Formulario input{
-      width: 140%;
-      margin-left: -10%;
-    }
   
+  /* Oculta la imagen lateral */
+  #imagenlateral {
+    display: none; 
   }
+  
+  /* Ajusta el ancho y el margen del formulario para pantallas más pequeñas */
+  #Formulario {
+    width: 100%; 
+    margin-left: -40%; 
+  }
+
+  /* Ajusta el ancho de los campos de entrada dentro del formulario */
+  #Formulario input {
+    width: 140%; 
+    margin-left: -10%; 
+  }
+}
